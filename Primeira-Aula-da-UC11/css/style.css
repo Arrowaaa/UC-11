@@ -52,6 +52,7 @@
     height: 150px;
     width: 150px;
     margin: 20px;
+    margin-top: -90px;
 }
 
 .descricao {
@@ -97,6 +98,62 @@ h2 {
     color: black;
 }
 
+.total { /*lebel do valor total */
+    margin-top: 50px; 
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menu-btn {
+    margin-right: 150px;
+    margin-bottom: -280px;
+    right: 100%; 
+    background-color: #05c1f0; /* Cor do botão */
+    color: white;
+    border: none;
+    padding: 10px 20px ;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+.menu-btn:hover {
+    background-color: #080808; /* Cor do botão ao passar o mouse */
+    color: aliceblue;
+}
+
+
+.row.menu {
+    display: flex;
+    align-items: center;
+}
+
 .btn-finalizar {
-    color: #000;
+    margin-top: 0; /* Remova o margin-top se já tiver */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-finalizar {
+    position: relative;
+    top: 100px; 
+    left: -140px; 
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.btn-excluir {
+    margin-top: -15px; 
 }

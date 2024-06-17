@@ -14,26 +14,28 @@
 <body>
     <header class="banner">
         <img class="logo" src="./Img/logo.png" alt="logo da empresa">
+        <button class="menu-btn">Menu</button>
     </header>
     <br>
     <h1 class="text-center">Loja de Informática</h1>
     <br>
     <div class="container">
         <h2>Produtos</h2><br>
-        
+
         <div class="row menu">
             <div class="col-lg-4 col-md-4 col-sm-4">Categoria</div>
             <div class="col-lg-4 col-md-4 col-sm-4">Descrição</div>
             <div class="col-lg-4 col-md-4 col-sm-4">Preço</div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./Img/gabinete.png" alt="Gabinete" class="foto-produto">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 descricao">
                 <h4>Gabinete</h4>
-                <label class="sobre">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, PLACA MÃE B760, 32GB RAM, SSD 1TB NVME, FONTE 850W, VGA RTX-4080</label>
+                <label class="sobre">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, PLACA MÃE B760, 32GB
+                    RAM, SSD 1TB NVME, FONTE 850W, VGA RTX-4080</label>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 preco">
                 <div class="preco-valor">R$ 139,00</div>
@@ -42,14 +44,15 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./img/placa-mae.png" alt="Placa Mãe" class="foto-produto">
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 descricao">
                 <h4>Placa Mãe</h4>
-                <label class="sobre">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE X1</label>
+                <label class="sobre">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE
+                    X1</label>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-4 preco">
                 <div class="preco-valor">R$ 539,00</div>
@@ -58,7 +61,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./img/placa-video.png" alt="Placa de Vídeo" class="foto-produto">
@@ -74,7 +77,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./img/fonte.png" alt="Fonte" class="foto-produto">
@@ -90,7 +93,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./img/cooler.png" alt="Cooler" class="foto-produto">
@@ -106,7 +109,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="row produto">
             <div class="col-lg-4 col-md-4 col-sm-4">
                 <img src="./img/ssd.png" alt="SSD" class="foto-produto">
@@ -123,23 +126,25 @@
             </div>
 
         </div>
-        
-        <hr class="linha">
-        <h2>Meu Carinho</h2><br>
-        
-        <div class="row menu">
-            <div class="col-lg-4 col-md-4 col-sm-4">Produto</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Quantidade</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Valor</div>
-        </div>
-        <div class="total">Total R$: valor do produto</div>
-        <div class="btn-excluir">
-            <button class="btn btn-success btn-excluir">Excluir</button>
-        </div>
+
+    <hr class="linha">
+<h2>Meu Carinho</h2><br>
+
+<div class="row menu">
+    <div class="col-lg-4 col-md-4 col-sm-4">Produto</div>
+<div class="col-lg-4 col-md-4 col-sm-4">Quantidade</div>
+<div class="col-lg-4 col-md-4 col-sm-4">Valor</div>
+</div>
+<label class="total">Total R$: valor do produto</label>
+<div class="buttons">
+    <div class="btn-excluir">
+        <button class="btn btn-success btn-excluir">Excluir</button>
+    </div>
     </div>
     <div class="btn-finalizar">
-        <button class="btn btn-success btn-compra">Finalizar</button>
+        <button class="btn btn-success btn-compra" id="btn-finalizar">Finalizar</button>
     </div>
+</div>
 
 
 </body>
