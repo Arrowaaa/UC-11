@@ -23,46 +23,57 @@
         <h2>Produtos</h2><br>
 
         <div class="row menu">
-            <div class="col-lg-4 col-md-4 col-sm-4">Categoria</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Descrição</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Preço</div>
+            <div class="col-lg-2 col-md-2 col-sm-2">Categoria</div>
+            <div class="col-lg-6 col-md-6 col-sm-6">Descrição</div>
+            <div class="col-lg-2 col-md-2 col-sm-2">Preço</div>
         </div>
 
         <div class="produtos-lista">
-            <div class="produto">
-                <img src="./Img/gabinete.png" alt="Gabinete" class="col-lg-4 col-md-4 col-sm-4">
-                <label class="col-lg-4 col-md-4 col-sm-4">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, PLACA MÃE B760, 32GB
-                    RAM, SSD 1TB NVME, FONTE 850W, VGA RTX-4080</label>
-                <span class="col-lg-4 col-md-4 col-sm-4">R$ 139,00</span>
-                <button class="btn-excluir" onClick="addCarrinho('Gabinete', 139.00, './Img/gabinete.png')">Adicionar</button>
+            <div class="produto row align-items-center">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img src="./Img/gabinete.png" alt="Gabinete" class="img-fluid">
+                </div>
+                <label class="col-lg-6 col-md-6 col-sm-6">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, 32GB RAM, SSD 1TB NVME, FONTE 850W, VGA RTX-4080</label>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span>R$ 139,00</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <button class="btn-add" onClick="addCarrinho('Gabinete', 139.00, './Img/gabinete.png')">Adicionar</button>
+                </div>
             </div>
-            <div class="produto">
-                <img src="./img/placa-mae.png" alt="Placa-Mãe" class="col-lg-4 col-md-4 col-sm-4">
-                <label class="col-lg-4 col-md-4 col-sm-4">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE
-                    X1</label>
-                <span class="col-lg-4 col-md-4 col-sm-4">R$ 539,00</span>
-                <button class="btn-excluir" onClick="addCarrinho('Placa-Mãe', 539.00, './img/placa-mae.png')">Adicionar</button>
+            <div class="produto row align-items-center">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img src="./Img/placa-mae.png" alt="Placa-Mãe" class="img-fluid">
+                </div>
+                <label class="col-lg-6 col-md-6 col-sm-6">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE X1</label>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span>R$ 539,00</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <button class="btn-add" onClick="addCarrinho('Placa-Mãe', 539.00, './Img/placa-mae.png')">Adicionar</button>
+                </div>
             </div>
-            <div class="produto">
-                <img src="./img/placa-video.png" alt="Placa de Vídeo" class="col-lg-4 col-md-4 col-sm-4">
-                <label class="col-lg-4 col-md-4 col-sm-4">PLACA DE VIDEO 1GB DUEX G210 DDR3 G210LP-1GD3</label>
-                <span class="col-lg-4 col-md-4 col-sm-4">R$ 139,00</span>
-                <button class="btn-excluir" onClick="addCarrinho('Placa-de-Vídeo', 139.00, './img/placa-video.png')">Adicionar</button>
+            <div class="produto row align-items-center">
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <img src="./Img/placa-video.png" alt="Placa de Vídeo" class="img-fluid">
+                </div>
+                <label class="col-lg-6 col-md-6 col-sm-6">PLACA DE VIDEO 1GB DUEX G210 DDR3 G210LP-1GD3</label>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <span>R$ 139,00</span>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2">
+                    <button class="btn-add" onClick="addCarrinho('Placa-de-Vídeo', 139.00, './Img/placa-video.png')">Adicionar</button>
+                </div>
             </div>
-
         </div>
         <hr class="linha">
         <div class="container2">
-
-            <h1>Meu Carinho</h1><br>
-            
+            <h1>Meu Carrinho</h1><br>
             <div class="carrinho">
                 <div id="carrinho-itens"></div>
                 <p>Total: R$ <span id="carrinho-total">0</span></p>
                 <button class="btn-finalizar" onClick="fecharPedido()">Finalizar Compra</button>
             </div>
-
-
         </div>
     </div>
     <script src="js/script.js"></script>

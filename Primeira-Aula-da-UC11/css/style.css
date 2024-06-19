@@ -1,5 +1,7 @@
 * {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .banner {
@@ -9,45 +11,46 @@
     background-image: url(../Img/hardware.png);
     background-repeat: no-repeat;
     background-size: cover;
-    
 }
 
 .container {
     margin-top: 20px;
     background-color: rgba(3, 3, 3, 0.3);
-    padding: 100px;
+    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
     text-align: center;
     color: black;
 }
+
 .container2 {
-    margin: 70px;
+    margin: 70px auto;
     width: 85%;
     background-color: rgba(72, 72, 73, 0.3);
-    padding: 100px ;
+    padding: 20px;
     border-radius: 8px;
     color: black;
 }
 
 .produto {
-    display: flex;
-    align-items: center;
     margin-bottom: 20px;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .foto-produto {
-    width: 200px;
+    width: 100%;
+    max-width: 150px;
     margin: auto;
 }
 
-
 .linha {
-    height: 100%;
-    border: none; 
-    height: 5px; 
-    background-color: black; 
-    color: black;
+    border: none;
+    height: 5px;
+    background-color: black;
 }
 
 .menu {
@@ -66,21 +69,6 @@
     margin-top: -90px;
 }
 
-
- .preco {
-    color: green;
-    font-size: 20px;
-    font-weight: bold 1;
-    justify-content: flex-end;
-} 
-
-.preco-valor {
-    color: green;
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
 h2 {
     display: flex;
     align-items: start;
@@ -90,17 +78,13 @@ h2 {
     width: 400px;
 }
 
-
-
-.btn-compra:hover{
+.btn-compra:hover {
     background-color: aliceblue;
     border-color: rgb(2, 50, 92);
     color: black;
 }
 
-
-
-.banner { /*Botão menu do banner*/
+.banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -110,49 +94,107 @@ h2 {
 .menu-btn {
     margin-right: 150px;
     margin-bottom: -280px;
-    right: 100%; 
-    background-color: #05c1f0; /* Cor do botão */
+    background-color: #05c1f0;
     color: white;
     border: none;
-    padding: 10px 20px ;
+    padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-    
 }
 
 .menu-btn:hover {
-    background-color: #080808; /* Cor do botão ao passar o mouse */
+    transition: 2s;
+    font-size: 25px;
+    background-color: #080808;
     color: aliceblue;
 }
-
 
 .row.menu {
     display: flex;
     align-items: center;
 }
 
+/* Classes para o botão finalizar compras do carrinho*/
+
 .btn-finalizar {
+    padding: 5px;
     background-color: rgb(9, 241, 67);
     color: whitesmoke;
 }
 
-
-.btn-finalizar:hover{
+.btn-finalizar:hover {
+    transition: 2s;
+    padding: 10px 10px;
+    font-size: 15px;
     background-color: aliceblue;
     border-color: rgb(2, 50, 92);
     color: black;
 }
 
+/* Classes para o botão adicionar produtos ao carrinho*/
 
-
-.btn-excluir {
+.btn-add {
     background-color: rgb(9, 241, 67);
     color: whitesmoke;
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
-.btn-excluir:hover{
+.btn-add:hover {
+    transition: 2s;
+    padding: 10px 15px;
+    font-size: 15px;
     background-color: aliceblue;
     border-color: rgb(2, 50, 92);
     color: black;
 }
+
+/* Botão remover no carrinho */
+
+.btn-remover {
+    background-color: rgb(9, 241, 67);
+    color: whitesmoke;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.btn-remover:hover {
+    transition: 2s;
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: aliceblue;
+    border-color: rgb(2, 50, 92);
+    color: black;
+}
+
+/* classes para as imagens no carrinho */
+
+.carrinho-item img {
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.carrinho-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.carrinho-item span {
+    flex-grow: 1;
+    margin: 0 10;
+}
+
+
+
+
+
+
+
+
+
