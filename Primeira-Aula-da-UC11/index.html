@@ -28,133 +28,44 @@
             <div class="col-lg-4 col-md-4 col-sm-4">Preço</div>
         </div>
 
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./Img/gabinete.png" alt="Gabinete" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>Gabinete</h4>
-                <label class="sobre">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, PLACA MÃE B760, 32GB
+        <div class="produtos-lista">
+            <div class="produto">
+                <img src="./Img/gabinete.png" alt="Gabinete" class="col-lg-4 col-md-4 col-sm-4">
+                <label class="col-lg-4 col-md-4 col-sm-4">COMPUTADOR INFOPARTS GAMER - INTEL I7-12700 C/ WATER COOLER, PLACA MÃE B760, 32GB
                     RAM, SSD 1TB NVME, FONTE 850W, VGA RTX-4080</label>
+                <span class="col-lg-4 col-md-4 col-sm-4">R$ 139,00</span>
+                <button class="btn-excluir" onClick="addCarrinho('Gabinete', 139.00, './Img/gabinete.png')">Adicionar</button>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 139,00</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./img/placa-mae.png" alt="Placa Mãe" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>Placa Mãe</h4>
-                <label class="sobre">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE
+            <div class="produto">
+                <img src="./img/placa-mae.png" alt="Placa-Mãe" class="col-lg-4 col-md-4 col-sm-4">
+                <label class="col-lg-4 col-md-4 col-sm-4">PLACA MAE HYPERPC H510M-VD4-V2.3 (IPI) REDE GIGABIT/HDMI/USB3.0/M2 NVME/PCIE
                     X1</label>
+                <span class="col-lg-4 col-md-4 col-sm-4">R$ 539,00</span>
+                <button class="btn-excluir" onClick="addCarrinho('Placa-Mãe', 539.00, './img/placa-mae.png')">Adicionar</button>
             </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 539,00</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./img/placa-video.png" alt="Placa de Vídeo" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>Placa de Vídeo</h4>
-                <label class="sobre">PLACA DE VIDEO 1GB DUEX G210 DDR3 G210LP-1GD3</label>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 139,00</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./img/fonte.png" alt="Fonte" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>Fonte</h4>
-                <label class="sobre">FONTE 350W DASH, VINIK - VFG350WP</label>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 209,99</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./img/cooler.png" alt="Cooler" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>Cooler</h4>
-                <label class="sobre">COOLER P/ PROCESSADOR NOTUS ST (INTEL) LGA1150/1151/1155/1156 65W PAC95PRSL</label>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 30,00</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="row produto">
-            <div class="col-lg-4 col-md-4 col-sm-4">
-                <img src="./img/ssd.png" alt="SSD" class="foto-produto">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 descricao">
-                <h4>SSD</h4>
-                <label class="sobre">SSD 512GB, PCIE NVME, READ 2.000MB/S, WRITE 1.500MB/S, BEST MEMORY</label>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 preco">
-                <div class="preco-valor">R$ 199,60</div>
-                <div class="botao-compra">
-                    <button class="btn btn-success btn-compra">Comprar</button>
-                </div>
+            <div class="produto">
+                <img src="./img/placa-video.png" alt="Placa de Vídeo" class="col-lg-4 col-md-4 col-sm-4">
+                <label class="col-lg-4 col-md-4 col-sm-4">PLACA DE VIDEO 1GB DUEX G210 DDR3 G210LP-1GD3</label>
+                <span class="col-lg-4 col-md-4 col-sm-4">R$ 139,00</span>
+                <button class="btn-excluir" onClick="addCarrinho('Placa-de-Vídeo', 139.00, './img/placa-video.png')">Adicionar</button>
             </div>
 
         </div>
+        <hr class="linha">
+        <div class="container2">
 
-    </div>
-    <hr class="linha">
-    <div class="container2">
-
-        <h2>Meu Carinho</h2><br>
-
-        <div class="row menu">
-            <div class="col-lg-4 col-md-4 col-sm-4">Produto</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Quantidade</div>
-            <div class="col-lg-4 col-md-4 col-sm-4">Valor</div>
-        </div>
-        <div class="row">
-            <label class="col-lg-4 col-md-4 col-sm-4" id="produto">Produto</label>
-            <label class="col-lg-4 col-md-4 col-sm-4" id="Q">? </label>
-            <label class="col-lg-4 col-md-4 col-sm-4" id="R">R$ </label>
-            <div class="buttons">
-                <div id="btn-excluir">
-                    <button class="btn btn-success btn-compra">Excluir</button>
-                    
-                    <div class="col-lg-4 col-md-4 col-sm-4">
-                        <button class="btn btn-success btn-compra" id="btn-finalizar">Finalizar</button>
-                    </div>
-                </div>
+            <h1>Meu Carinho</h1><br>
+            
+            <div class="carrinho">
+                <div id="carrinho-itens"></div>
+                <p>Total: R$ <span id="carrinho-total">0</span></p>
+                <button class="btn-finalizar" onClick="fecharPedido()">Finalizar Compra</button>
             </div>
+
+
         </div>
     </div>
-
-
+    <script src="js/script.js"></script>
 </body>
 
 </html>
