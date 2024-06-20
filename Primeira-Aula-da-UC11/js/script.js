@@ -28,7 +28,7 @@ function removeItemCarrinho(index) { //Função para remover itens de carrinho.
 // //     atualizaCarrinho();
 // // }
 
-function atualizaCarrinho() {
+function atualizaCarrinho() {  //função para atualizar os produtos adicionado no carrinho.
     const cartItens = document.getElementById('carrinho-itens');
     cartItens.innerHTML = '';
     total = 0;

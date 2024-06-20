@@ -37,13 +37,22 @@
 }
 
 .img-fluid {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
+}
+
+
+.produtos-lista label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+
 }
 
 .foto-produto {
     width: 100%;
-    max-width: 150px;
+    max-width: 100px;
     margin: auto;
 }
 
@@ -171,7 +180,7 @@ h2 {
 /* classes para as imagens no carrinho */
 
 .carrinho-item img {
-    width: 500px;
+    width: 100px;
     height: auto;
     margin-right: 10px;
     display: inline-block;
