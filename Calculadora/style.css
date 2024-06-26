@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    background-color: gray;
+}
+.box {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+#nome {
+    padding: 0 100px 0 0;
+    background-color: black;
+}
+
+.calc{
+    border: 10px ;
+    border-radius: 10px;
+    color: white;
+}
+
+.h1 {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botao {
+    background-color: black;
+    color: white;
+}
