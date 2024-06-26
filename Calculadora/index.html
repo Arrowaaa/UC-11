@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+        
 </head>
 
 <body>
-    <form action="#" method="POST" class="calc">
+    <form action="#" method="POST" class="box" onsubmit="event.preventDefault(); calcular();">
+        <br>
         <header class="h1">
             Calculadora
         </header>
-
-        <section class="box">
-            <label for="nome">Primeiro número: </label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite aqui o Primeiro número"><br>
-
-            <label for="nome">Escolha uma operação: </label><br>
-            <input type="text" id="nome" name="numero" placeholder="..Escolha uma operação..."><br>
-
-            <label for="nome">Segundo número número: </label><br>
-            <input type="text" id="nome" name="nome" placeholder="Digite aqui o segundo número"><br><br>
-    
-           <button>Calcular</button>
-        </section>
         <br>
-        <footer>
-            <label for="">Resultado</label>
+        <hr> 
+        <br>
+
+        <section class="calc">
+            <label for="primeiroNumero">Primeiro número: </label>
+            <input type="text" id="primeiroNumero" name="primeiroNumero" placeholder="Digite aqui o primeiro número">
+
+            <label for="operacao">Escolha uma operação: </label>
+            <select id="operacao" name="operacao" >
+                <option value="">..Escolha uma operação...</option>
+                <option value="s">Soma</option>
+                <option value="d">Divisão</option>
+                <option value="a">Subtração</option>
+                <option value="m">Multiplicação</option>
+            </select>
+
+            <label for="segundoNumero">Segundo número: </label>
+            <input type="text" id="segundoNumero" name="segundoNumero" placeholder="Digite aqui o segundo número" ><br>
+    
+            <button type="submit">Calcular</button>
+        </section>
+        <br> <hr>
+        <footer><br>
+            <label id="resultado">Resultado:</label><br><br>
         </footer>
     </form><br>
-
-
 </body>
 
 </html>

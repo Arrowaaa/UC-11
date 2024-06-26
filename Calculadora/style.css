@@ -1,29 +1,95 @@
-*{
-    margin: 0;
-    background-color: gray;
-}
-.box {
-    border: 1px solid white;
-    border-radius: 10px;
-}
-#nome {
-    padding: 0 100px 0 0;
-    background-color: black;
-}
-
-.calc{
-    border: 10px ;
-    border-radius: 10px;
-    color: white;
-}
-
-.h1 {
-    font-size: 30px;
+body {
+    font-family: Arial, sans-serif;
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #b6b2b2;
 }
-.botao {
-    background-color: black;
+
+.box {
+    margin-bottom: 150px;
+    background-color: #b6b2b2;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    height: 500px auto;
+}
+
+header.h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color:white;
+}
+
+.calc {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.calc label {
+    margin-bottom: 5px;
+    font-weight: bold;
     color: white;
+
+}
+
+.calc input[type="text"],
+.calc select {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #060607;
+}
+
+button {
+    padding: 10px 10px;
+    background-color: #060607;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px; 
+    display: inline-block;
+}
+
+
+button:hover {
+    background-color: #fdf9f9;
+    color: #060607;
+}
+
+
+
+footer {
+    text-align: start;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#primeiroNumero {    
+    color: white;
+}
+
+#segundoNumero {    
+    color: white;
+}
+#resultado {
+    color: white;
+}
+
+#operacao {
+    color: rgb(145, 142, 142);
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(7, 7, 7);
+    margin: 20px 0;
 }
