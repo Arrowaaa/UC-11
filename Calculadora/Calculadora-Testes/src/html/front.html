@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <title>Calculadora</title>
+</head>
+<body>
+    
+    <div id="tela"> 
+        <div id="telainterna"> 
+    <h1>Calculadora</h1>
+    <hr>
+   
+    <div class="calc" id="calc">
+        
+        <label for="primeiroNumero" >Primeiro número:</label><br>
+        <input type="number" id="primeiroNumero" class="tamanho"  placeholder="Digite aqui o primeiro número">
+        
+        <label id="selecione">Escolha uma operação:</label><br>
+        <select name="operacao" id="operacao" class="tamanho2">
+            <option value="selecione">---Selecione---</option>
+            <option value="soma">Soma</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+            <option value="subtracao">Subtração</option>
+        </select><br>
+
+        <label for="segundoNumero">Segundo número:</label><br>
+        <input type="number" id="segundoNumero"  class="tamanho" placeholder="Digite aqui o segundo número"><br><br>
+
+
+        <button id="calcular" onClick="calcula()">Calcular</button>
+    </div>
+    <hr>
+    <div class="resultado2">
+        <h2 id="resultado">Resultado: 
+        <div id="resultadoFinal">  </div>
+        </h2>
+        <hr>
+      </div>
+   
+    </form>
+</div>
+<script src="../javascript/calculadora.js"></script> 
+<script src="../javascript/divisao.js"></script>
+<script src="../javascript/multiplicacao.js"></script> 
+<script src="../javascript/soma.js"></script>
+<script src="../javascript/subtracao.js"></script>   
+<script src="../javascript/validacaoCor.js"></script> 
+
+</body>
+</html>
